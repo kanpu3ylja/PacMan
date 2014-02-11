@@ -1,0 +1,49 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Software list</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form" >
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"> </div>
+     
+     
+     <div id="content">
+     <table style="frame:void; width:100%;"> 
+     <tr></tr>
+     <tr valign="middle"><td><h1>Software list</h1></td></tr>
+     <tr></tr>
+     <tr> 
+     <td width="10%"><input type="submit" style="height:30px; width:180px; font-weight:bold" wicket:id="newMPButton" value="New MP software"></td>
+     <td width="10%"><input type="submit" style="height:30px; width:180px; font-weight:bold" wicket:id="new3rdButton" value="New third-party software"></td>
+     <td width="10%"><input type="text" style="font-style: italic; color: black; text-align: right; font-weight:bold" value="Search" wicket:id="search"
+     onfocus="if(this.value == 'Search') {this.value=''}" onblur="if(this.value == ''){this.value ='Search'}"></td>
+     <td width="70%"></td>
+     </tr>
+ 	 <tr></tr><tr></tr><tr></tr><tr></tr>
+     </table>
+     
+<table style="width:50%;" border="1">
+<tr>
+<td><b>Software name</b></td>
+<td><b>Version/revision</b></td>
+</tr>
+<tr style="height:30px;">
+<td><label>...</label></td> 
+<td><label>...</label></td> <!-- если не MP, то пусто -->
+</tr>
+</table>
+
+     
+     </div>
+     <div id="footer">
+<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

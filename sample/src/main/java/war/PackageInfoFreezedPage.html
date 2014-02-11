@@ -1,0 +1,87 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Package information</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+    <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+     
+     
+     <div id="content">
+     
+     
+     <table style="width:100%; frame:void"> 
+     <tr></tr>
+     <tr valign="middle"><td colspan="3"><h1>Package information</h1></td></tr>
+     <tr> 
+     <td width="10%"><input type="submit" style="height:30px; width:130px; font-height:bold" wicket:id="backToList" value="Back"></td>
+     <td width="70%"></td>
+     </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+     
+<tr>
+<td><label>Package name: </label></td> <td colspan="2"><label wicket:id="packName"> -Defined package name- </label></td>
+</tr>
+<tr>
+<td><label>Client:</label></td> <td colspan="2"><label wicket:id="client"> -Defined client- </label></td>
+</tr>
+<tr>
+<td><label>Directo project ID:</label></td> <td colspan="2"><label wicket:id="projectID"> -Defined project ID- </label></td>
+</tr>
+<tr>
+<td><label>Till date: </label></td> <td colspan="2"><label wicket:id="date"> -Defined date- </label></td>
+</tr>
+<tr>
+<td><label> OS:</label></td> <td colspan="2"><label wicket:id="OS"> -Selected OS- </label></td>
+</tr>
+     
+     </table>
+     
+
+
+
+
+<table style="border:0; frame:void; width:100%;">
+<tr>
+<td style="width:50%;">
+	<table border="1">
+		<tr>
+		<td style="width:300; font-weight:bold"><b>Software name</b></td>
+		<td style="width:150; font-weight:bold"><b>Version/revision</b></td>
+		</tr>
+		<tr style="height:30px;">
+		<td style="width:300;"> <label wicket:id="client_id">...</label></td>
+		<td style="width:100;"> <label wicket:id="client_name">...</label> </td>
+		</tr>
+	</table>
+</td>
+
+<td>
+	<table border="1">
+	<tr>
+	<td style="width:100; font-weight:bold"><b>Key ID</b></td>
+	<td style="width:100; font-weight:bold"><b>Key features</b></td>
+	<td style="width:300; font-weight:bold"><b>Key name</b></td>
+	</tr>
+	<tr style="height:30px;">
+	<td style="width:100;"><label wicket:id="keyID">...</label></td>
+	<td style="width:100;"><label wicket:id="keyFeatures">...</label></td>
+	<td style="width:300;"><label wicket:id="keyName">...</label></td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+     </div>
+     <div id="footer">
+    	 <img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

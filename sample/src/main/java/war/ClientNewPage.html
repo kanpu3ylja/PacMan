@@ -1,0 +1,81 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>New client</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+       
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+     
+     
+     <div id="content">
+     
+     <table style="width:35%;">
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td colspan="3" style="text-align:center;"><h2>New client</h2></td></tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Client name: </label></td>
+<td><input type="text" value="Enter client name" style="width:200;"  wicket:id="clientName"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo client ID: </label></td> 
+<td><input type="text" name="Jira" value="Enter client ID  " style="width:200;" wicket:id="directoClient"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>JIRA ID 1: </label></td>
+<td><input type="text" name="Jira" value="Enter Jira ID " style="width:200;" wicket:id="jira1"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>JIRA ID 2: </label></td> 
+<td><input type="text" name="Jira" value="Enter Jira ID " style="width:200;" wicket:id="jira2"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>JIRA ID 3: </label></td>
+<td><input type="text" name="Jira" value="Enter Jira ID " style="width:200;" wicket:id="jira3"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo project ID 1: </label></td>
+<td><input type="text" name="directo" value="Enter directo project ID" style="width:200;" wicket:id="directo1"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo project ID 2: </label></td>
+<td><input type="text" name="directo" value="Enter directo project ID" style="width:200;" wicket:id="directo2"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo project ID 3: </label></td>
+<td><input type="text" name="directo" value="Enter directo project ID" style="width:200;" wicket:id="directo3"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo project ID 4: </label></td>
+<td><input type="text" name="directo" value="Enter directo project ID" style="width:200;" wicket:id="directo4"></td> 
+</tr>
+
+
+<tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="saveNewClient"><b>Save client</b></button></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="cancelNewClient"><b>Cancel</b></button></td> 
+</tr>
+</table>
+
+     </div>
+     <div id="footer">
+    	 <img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Package manager</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+     <div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+    
+     
+     <div id="content">
+     <table style="frame:void; width:100%;"> 
+     <tr></tr>
+     <tr valign="middle"><td><h1>Packages</h1></td></tr>
+     <tr></tr>
+     <tr> 
+     <td width="10%"><input type="submit" style="height:30px; width:150px; font-weight:bold" wicket:id="newPackageBTN" value="New package"></td>
+     <td width="10%"><input type="submit" style="height:30px; width:150px; font-weight:bold" wicket:id="freezedPackagesBTN" value="Freezed packages"></td>
+     <td width="10%"><input type="text" style="font-style: italic; color: black; text-align: right; font-weight:bold" wicket:id="search" value="Search"
+     onfocus="if(this.value == 'Search') {this.value=''}" onblur="if(this.value == ''){this.value ='Search'}"></td>
+     <td width="70%"></td>
+     </tr>
+ 	 <tr></tr><tr></tr><tr></tr><tr></tr>
+     </table>
+
+
+     <table border="1" style="width:70%;">
+	 <tr>
+	 <td style="width:300px; font-weight:bold"><b>Package name</b></td>
+	 <td style="font-weight:bold"><b>Client</b></td>
+ 	 <td style="font-weight:bold"><b>Buttons</b></td>
+ 	 </tr>
+ 	 <tr style="height:30px;">
+ 	 <td><label wicket:id="packName">...</label></td>
+ 	 <td><label wicket:id="client">...</label></td>
+ 	 <td width="315px">
+ 	 <input type="submit" style="width:100px; font-weight:bold" wicket:id="infoPackageBTN" value="Information">
+ 	 <input type="submit" style="width:100px; font-weight:bold" wicket:id="editPackageBTN" value="Edit">
+ 	 <input type="submit" style="width:100px; font-weight:bold" wicket:id="freezeQuest" value="Freeze">
+ 	 </td>
+ 	 </tr>
+ 	 </table>
+
+     
+     </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>
+

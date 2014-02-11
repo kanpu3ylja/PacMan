@@ -1,0 +1,37 @@
+#header{
+background:gray;
+width:100%;
+height:5%;
+}
+
+#menu{
+background:oldlace;
+width:12%;
+height:90%;	
+border:1px solid black;
+}
+
+#content{
+background:oldlace;
+width:88%;
+height:90%;
+position:absolute;
+left:12%;
+top:5%;
+border:1px solid black;
+}
+
+#footer{
+background:gray;
+width:100%;
+height:4%;
+border:1px solid black;
+}
+
+#clientTable{
+
+}
+
+body{
+margin:0px;
+}

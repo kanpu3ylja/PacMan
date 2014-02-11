@@ -1,0 +1,52 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>Choose software</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form wicket:id="form">
+ <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"> </div> 
+     
+     
+     <div id="content">
+     
+     <table>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:center;"><h2>Select software</h2></td></tr>
+</table>
+
+<table border="1" style="width:50%">
+<tr>
+<td style="width:10%; font-weight:bold"><label>Select</label></td>
+<td style="font-weight:bold"><label>Software name</label></td>
+<td style="font-weight:bold"><label>Version or revision</label></td> 
+</tr>
+<tr>
+<td><input type="checkbox" wicket:id="softCB"></td>
+<td><label wicket:id="softName">...</label></td>
+<td><label wicket:id="softVR">...</label></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+</table>
+
+<table>
+<tr><td style="width:10%"></td>
+<td><input type="submit" style="height:30px; width:130px; font-weight:bold" wicket:id="saveSoftNew" value="Save selected"></td>
+<td><input type="submit" style="height:30px; width:130px; font-weight:bold" wicket:id="cancelSoftNew" value="Cancel"></td> 
+</tr>
+</table>
+     
+     
+     </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+
+</form>
+</body>
+</html>

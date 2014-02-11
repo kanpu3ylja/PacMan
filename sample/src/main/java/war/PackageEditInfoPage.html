@@ -1,0 +1,93 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Package editor</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+     
+     
+     <div id="content">
+     <table style="width:35%;">
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td colspan="3" style="text-align:center;"><h2>Edit package</h2></td></tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Package name: </label></td>
+<td><input type="text" value="Existing package name" style="width:200;"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Software: </label></td> 
+<td><button type="submit" wicket:id="softEditPackage" style="width:200;">Add software</button> </td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>HASP: </label></td>
+<td><button type="submit" wicket:id="haspEditPackage" style="width:200;">HASP list</button></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Client:</label></td> 
+<td><select style="width:200;"><option>Client1</option> <option>Client2</option> <option>Client3</option> <option>Client4</option> </select></td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Directo project ID:</label></td>
+<td><input type="text" name="project_id" style="width:200;"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Till date: </label></td>
+<td><input type="date" name="Till date" value="choose date" style="width:200;"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label> OS: </label></td>
+<td><input type="checkbox" value="choose date">Windows 7 x32</td> 
+</tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"></td>
+<td><input type="checkbox" value="choose date">Windows 7 x64</td> 
+</tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"></td>
+<td><input type="checkbox" value="choose date">Windows Server 2008R2</td> 
+</tr>
+<tr>
+<td colspan="2"> </td> 
+<td><hr></td></tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"></td>
+<td><input type="checkbox" value="choose date">Windows Server 2008</td> 
+</tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"></td>
+<td><input type="checkbox" value="choose date">Windows Server 2003 (not supported)</td> 
+</tr>
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"></td>
+<td><input type="checkbox" value="choose date">Windows XP (not supported)</td> 
+</tr>
+
+
+<tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="saveChanges"><b>Save changes</b></button></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="cancelChanges"><b>Cancel</b></button></td> 
+</tr>
+</table>
+     
+     </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Add new MP Software</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"> </div>
+     
+     
+     <div id="content">
+
+<table style="width:35%;">
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td colspan="3" style="text-align:center;"><h2>New MP software</h2></td></tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right; font-weight:bold"><label>Software name: </label></td>
+<td><input type="text" wicket:id="softName" value="Enter software name" style="width:200;" onfocus="if(this.value == 'Enter software name') {this.value=''}" onblur="if(this.value == ''){this.value ='Enter software name'}"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right; font-weight:bold">Jenkins<input type="checkbox" wicket:id="jenkinsCB" value="Jenkins" name="Jenkins"></td> 
+<td><input type="text" wicket:id="jenkinsBuild" value="Enter Jenkins Build number" style="width:200;" onfocus="if(this.value == 'Enter Jenkins Build number') {this.value=''}" onblur="if(this.value == ''){this.value ='Enter Jenkins Build number'}"> </td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right; font-weight:bold"><label>Link to jenkins build: </label></td>
+<td><input type="text" wicket:id="jenkinsLink" value="Enter link to Jenkins build" style="width:200;" onfocus="if(this.value == 'Enter link to Jenkins build') {this.value=''}" onblur="if(this.value == ''){this.value ='Enter link to Jenkins build'}"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right; font-weight:bold">SVN<input type="checkbox" value="SVN" wicket:id="svnCB" name="SVN"></td> 
+<td><input type="text" wicket:id="svnRevision" value="Enter SVN revision" style="width:200;" onfocus="if(this.value == 'Enter SVN revision') {this.value=''}" onblur="if(this.value == ''){this.value ='Enter SVN revision'}"> </td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right; font-weight:bold"><label>Link to SVN folder: </label></td>
+<td><input type="text" wicket:id="svnFolder" name="limk" value="Enter link to SVN folder" style="width:200;" onfocus="if(this.value == 'Enter link to SVN folder') {this.value=''}" onblur="if(this.value == ''){this.value ='Enter link to SVN folder'}"></td> 
+</tr>
+
+<tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td><input type="submit" style="height:30px; width:170px; font-weight:bold" wicket:id="saveMPBuild" value="Save MP software build"></td>
+<td><input type="submit" style="height:30px; width:170px; font-weight:bold" wicket:id="cancelMPBuild" value="Cancel"></td> 
+</tr>
+</table>
+
+     </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

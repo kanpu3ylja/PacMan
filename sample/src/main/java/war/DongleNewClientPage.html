@@ -1,0 +1,42 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>New client for dongle</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"> </div>
+     
+     
+     <div id="content">
+
+<table>
+<tr><td colspan="3" style="text-align:center;"><h3><b>Add new client for HASP</b></h3></td></tr>
+<tr><td style="width:10%"></td>
+<td><label>Client name: </label></td>
+<td><input wicket:id="name" type="text" value="Enter client name"></td> 
+</tr>
+<tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td><label>Client ID: </label></td>
+<td><input wicket:id="clientId" type="text" value="Enter client ID"></td>
+</tr>
+<tr></tr><tr></tr><tr></tr>
+<tr><td style="width:10%"></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="saveNewHaspClient"><b>Save</b></button></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="cancelNewHaspClient"><b>Cancel</b></button></td> 
+</tr>
+</table>
+
+ </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+
+</form>
+</body>
+</html>

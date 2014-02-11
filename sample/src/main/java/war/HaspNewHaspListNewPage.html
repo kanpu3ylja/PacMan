@@ -1,0 +1,124 @@
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+<title>New HASP</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form wicket:id="form">
+<div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"> </div>
+     
+     
+     <div id="content">
+          <table>
+<tr></tr><tr></tr><tr></tr><tr></tr>
+<tr><td style="width:80%"></td><td style="text-align:center;"><h3>New hasp</h3></td></tr>
+</table>
+
+<table style="width:100%;">
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Hasp name: </label></td> 
+<td><input type="text" value="Enter HASP name" style="width:200;"></td>  
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Hasp key ID: </label></td>
+<td><input type="text" value="Enter HASP key ID" style="width:200;"></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Choose HASP client ID: </label></td>
+<td><select><option>Client1</option> <option>Client2</option> <option>Client3</option> <option>Client4</option> </select></td> 
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Select features:</label></td> 
+<td><table>
+<tr><td colspan="3"><label><b>Client features:</b></label></td></tr>
+<tr>
+<td><input type="checkbox" value=""> 900 - CIM Maxima Series</td>
+<td><input type="checkbox" value=""> 901 - CIM Pro Series</td>
+<td><input type="checkbox" value=""> 902 - CIM Premium Series</td>
+</tr>
+<tr>
+<td><input type="checkbox" value=""> 902 - Matica 7000</td>
+<td><input type="checkbox" value=""> 904 - Datacard Desktop V9000</td>
+<td><input type="checkbox" value=""> 905 - XIT Perso Workplace</td>
+</tr>
+<tr>
+<td><input type="checkbox" value=""> 906 - Datacard Syntera</td>
+<td><input type="checkbox" value=""> 907 - IAI</td>
+<td><input type="checkbox" value=""> 909 - Android</td>
+</tr>
+<tr>
+<td><input type="checkbox" value=""> 910 - Shared API</td>
+<td><input type="checkbox" value=""> 911 - Diletta</td>
+<td><input type="checkbox" value=""> 912 - Document verifier plugin</td>
+</tr>
+<tr>
+<td><input type="checkbox" value=""> 913 - Provisioning Service</td>
+<td><input type="checkbox" value=""> 930 - Batch Processing Client</td>
+<td></td>
+</tr>
+<tr><td colspan="3"><label><b>Server features:</b></label></td></tr>
+<tr>
+<td><input type="checkbox" value=""> 940 - PMSys</td>
+<td><input type="checkbox" value=""> 990 - X-Com Primary</td>
+<td><input type="checkbox" value=""> 991 - X-Com Backup</td>
+</tr>
+<tr><td colspan="3"><label><b>X-Product features:</b></label></td></tr>
+<tr>
+<td><input type="checkbox" value=""> 700 - SPM</td>
+<td><input type="checkbox" value=""> 777 - Port</td>
+<td><input type="checkbox" value=""> 800 - Masai Mara Operator WP</td>
+</tr>
+<tr><td colspan="3"><label><b>Special features:</b></label></td></tr>
+<tr>
+<td><input type="checkbox" value=""> 999 - JS Encrypt / Decrypt</td>
+<td></td>
+<td></td>
+</tr>
+</table> </td><td></td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Hasp type: </label></td>
+<td>
+<table><tr><td><input type="checkbox" value=""> Hardware</td>
+<td><input type="checkbox" value=""> Software</td></tr></table></td>
+</tr>
+
+<tr><td style="width:10%"></td>
+<td style="text-align:right;"><label>Dongle type: </label></td>
+<td>
+<table><tr><td><input type="radio"> Local HASP</td>
+<td><input type="radio"> Network HASP</td>
+<td><input type="radio"> Time HASP</td>
+<td width="25"></td>
+<td><label>Till: </label></td>
+<td><input type="date" /></td>
+</tr></table></td>
+</tr>
+
+
+</table>
+
+
+<table>
+<tr><td style="width:50%"></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="newHaspNewPackage"><b>Save HASP</b></button></td>
+<td><button type="submit" style="height:30px; width:130px" wicket:id="cancelHaspNewPackage"><b>Cancel</b></button></td> 
+</tr>
+</table>
+
+     </div>
+     <div id="footer">
+    	<img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+
+</form>
+</body>
+</html>

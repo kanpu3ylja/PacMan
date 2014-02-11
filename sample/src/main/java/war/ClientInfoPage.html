@@ -1,0 +1,85 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Client information</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+<div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+     
+     
+     <div id="content">
+     
+     <table style="width:100%; frame:void"> 
+     <tr></tr>
+     <tr valign="middle"><td colspan="3"><h1>Information about client</h1></td></tr>
+     <tr> 
+     <td width="10%"><input type="submit" style="height:30px; width:130px" wicket:id="clientEdit" value="Edit client"></td>
+     <td width="10%"><input type="submit" style="height:30px; width:130px" wicket:id="cancelClientInfo" value="Cancel"></td>
+     <td width="70%"></td>
+     </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+     
+<tr>
+<td><label>Client name: </label></td> <td colspan="2"><label wicket:id="clientName"> -Defined client name- </label></td>
+</tr>
+<tr>
+<td><label>Directo client ID: </label></td> <td colspan="2"><label wicket:id="directoClient"> -Defined directo client ID- </label></td>
+</tr>
+<tr>
+<td><label>JIRA ID 1: </label> </td> <td colspan="2"><label wicket:id="jira1"> -Defined JIRA ID- </label></td>
+</tr>
+<tr>
+<td><label>JIRA ID 2: </label> </td> <td colspan="2"><label wicket:id="jira2"> -Defined JIRA ID- </label></td>
+</tr>
+<tr>
+<td><label>JIRA ID 3: </label> </td> <td colspan="2"><label wicket:id="jira3"> -Defined JIRA ID- </label></td>
+</tr>
+<tr>
+<td><label>Directo project ID 1: </label> </td> <td colspan="2"><label wicket:id="directo1"> -Defined Directo ID- </label></td>
+</tr>
+<tr>
+<td><label>Directo project ID 2: </label> </td> <td colspan="2"><label wicket:id="directo2"> -Defined Directo ID- </label></td>
+</tr>
+<tr>
+<td><label>Directo project ID 3: </label> </td> <td colspan="2"><label wicket:id="directo3"> -Defined Directo ID- </label></td>
+</tr>
+<tr>
+<td><label>Directo project ID 4: </label> </td> <td colspan="2"><label wicket:id="directo4"> -Defined directo ID- </label></td>
+</tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+</table>
+
+<table style="border:0; frame:void; width:100%;">
+<tr>
+<td style="width:50%;">
+	<table border="1">
+		<tr>
+		<td style="width:300;"><b>Package name</b></td>
+		<td><b>Buttons</b></td>
+		</tr>
+		<tr style="height:30px;">
+		<td style="width:300;" wicket:id="packageName">...</td>
+		<td>
+		<input type="submit" style="width:130px" wicket:id="infoPackageBTN" value="Information">
+		<input type="submit" style="width:130px" wicket:id="editPackageBTN" value="Edit">
+		<input type="submit" style="width:130px" wicket:id="freezeQuest" value="Freeze">
+		</td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+
+     </div>
+     <div id="footer">
+    	 <img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>

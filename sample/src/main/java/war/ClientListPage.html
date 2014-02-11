@@ -1,0 +1,53 @@
+<html xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+  <head>
+     <title>Client list</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+
+   <body>
+   <form wicket:id="form">
+     <div id="header">
+     <img src="http://www.x-infotech.com/img/small_logo.png" style="vertical-align:middle; height:100%">  <b>Package manager</b>
+     </div>
+        
+        
+	 <div id="menu" style="text-align:center" wicket:id="buttonPanel"></div>
+     
+     
+     <div id="content">
+     <table style="frame:void; width:100%;"> 
+     <tr></tr>
+     <tr valign="middle"><td><h1>Client list</h1></td></tr>
+     <tr></tr>
+     <tr> 
+     <td width="10%"><input type="submit" style="width:150px; height:30px" wicket:id="NewClientButton" value="New client"></td>
+     <td width="10%"><input type="text" style="font-style: italic; color: black; text-align: right;" value="Search" wicket:id="search"></td>
+     <td width="70%"></td>
+     </tr>
+ 	 <tr></tr><tr></tr><tr></tr><tr></tr>
+     </table>
+     
+<table style="width:75%;" border="1">
+<tr>
+<td><b>Client name</b></td>
+<td><b>Directo ID</b></td>
+<td><b>Jira ID</b></td>
+<td><b>Buttons</b></td>
+</tr>
+<tr>
+<td><label wicket:id="clientName"></label>...</td>
+<td><label wicket:id="directoID"></label>...</td>
+<td><label wicket:id="jiraID"></label>...</td>
+<td width="210px">
+<input type="submit" style="width:100px" wicket:id="clientInfo" value="Information">
+<input type="submit" style="width:100px" wicket:id="clientEdit" value="Edit">
+</td>
+</tr>
+</table>
+
+     </div>
+     <div id="footer">
+    	 <img src="http://www.x-infotech.com/img/logo.png" style="vertical-align:middle; height:100%"> <a style="color:rgb(0,206,209);"><font face="verdana" size="1">© 2014</font></a></div>
+    	</form>
+  </body>
+</html>
